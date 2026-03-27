@@ -1,0 +1,151 @@
+/* PC、スマホ共通スタイル */
+body {
+  font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial,
+    sans-serif;
+    padding: 40px;
+}
+
+p {
+  font-size: 15px;
+}
+
+#main-visual>img {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ #nav-pc a {
+   text-decoration: none;
+   margin-left: 20px;
+   color: #0d0d0d;
+}
+
+#nav-pc {
+  display: block;
+}
+
+#menu-sp {
+  display: none;
+}
+
+/* =====================
+   PC向け（768px以上）
+===================== */
+@media screen and (min-width: 768px) {
+
+  /* SP用は非表示 */
+  #menu-sp {
+    display: none;
+  }
+
+  #nav-sp {
+    display: none;
+  }
+}
+
+
+/* =====================
+   SP向け（767px以下）
+===================== */
+@media screen and (max-width: 767px) {
+  /* body */
+  body {
+    min-width: 375px;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* PCナビ非表示 */
+  #nav-pc {
+    display: none;
+  }
+
+  /* ハンバーガーメニュー */
+   #menu-sp {
+    display: block;
+    float: right;
+    padding: 0;
+   }
+
+  /* スマホナビ全体 */
+  #nav-sp {
+    background-color: #ce933e;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 100;
+  }
+
+  /* ul */
+  #nav-sp ul {
+    padding-left: 0;
+  }
+
+  /* li */
+  #nav-sp li {
+    list-style: none;
+  }
+
+  /* 閉じるボタン */
+  #close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  /* ロゴ */
+  #logo-sp {
+    margin: 80px 0px 30px 20px;
+  }
+
+  /* リンク共通 */
+  #nav-sp a {
+    display: block;
+  }
+
+  /* リンク状態 */
+  #nav-sp a:link {
+    color: #ffffff;
+  }
+
+  #nav-sp a:visited {
+    color: #ffffff;
+  }
+
+  #nav-sp a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+
+  #nav-sp a:active {
+    color: #ffffff;
+  }
+
+  /* メニュー */
+  #nav-sp .menu {
+    text-decoration: none;
+    display: block;
+    margin: 0 20px;
+    height: 44px;
+    font-size: 16px;
+    background-image: url("images/arrow.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+}
+
+
+
+
+
+ 
+
+ 
