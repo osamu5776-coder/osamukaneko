@@ -1,0 +1,14 @@
+/* 画像を中央配置 */
+.image-wrap {
+    width: 100%;
+    text-align: center;
+}
+
+/* レスポンシブ画像 */
+.responsive-image {
+    width: 100%;
+    max-width: 1600px; /* PCでの最大幅 */
+    height: auto;     /* 縦横比を維持 */
+    display: block;
+    margin: 0 auto;
+}
